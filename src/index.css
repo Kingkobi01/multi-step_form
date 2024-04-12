@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url(/assets/fonts/Ubuntu-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url(/assets/fonts/Ubuntu-Normal.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url(/assets/fonts/Ubuntu-Bold.ttf);
+  font-weight: 700;
+}
+
+main {
+  @apply relative col-span-3 md:col-start-2 px-16 pt-8 pb-6 start-2 md:min-h-[520px] -mt-[8rem] md:mt-0;
+}
+
+main > div {
+  @apply bg-neutral-100 md:bg-transparent shadow-lg md:shadow-none px-4 py-7 md:p-0 rounded-md;
+}
+
+input {
+  @apply bg-inherit;
+}
+
+.back {
+  @apply block  mr-auto py-2 rounded-md w-fit text-neutral-400;
+}
+.next {
+  @apply block bg-primary-400 ml-auto px-5 py-2 rounded-md w-fit text-neutral-100 duration-200 hover:bg-primary-400/60;
+}
+
+a.active > div > p {
+  @apply bg-neutral-200 text-primary-400;
+}
