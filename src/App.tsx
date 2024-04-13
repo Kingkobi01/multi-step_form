@@ -77,7 +77,7 @@ function App() {
         { path: "*", element: <Error404 /> },
       ],
     },
-  ]);
+  ], {basename:"/multi-step_form/"});
   return <RouterProvider router={router} />;
 }
 
